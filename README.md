@@ -16,6 +16,7 @@ Data Engineer and Data Analyst with **15 years of experience** across the whole 
 - 🏗️ I build data platforms from scratch in companies with little or no analytics culture, implementing **medallion architecture (bronze, silver, gold)**, **dimensional models** and governed data products for BI.
 - ☁️ Hands-on with modern cloud stacks: **AWS (S3, Glue, Athena)**, **Snowflake**, **Azure (Data Factory, Synapse)** and **Databricks**, including **cross-cloud migrations** (AWS → Snowflake on Azure) and **cost optimization**.
 - 📊 Expert in **SQL**, **Python** and **Power BI**, turning data into reliable insights for executive decision-making.
+- 📈 **Statistics applied to business questions**: hypothesis testing, confidence intervals, experiment design (A/B, champion vs challenger) and **credit risk scoring**.
 - 🤝 Delivered data projects for companies such as **Itaú**, **JBS (Seara, Friboi, Swift)**, **Suhai Seguradora**, **Samsung**, **Panasonic** and **Nestlé**.
 - 🌏 Advanced English — 2 years living and working in Australia.
 
@@ -44,6 +45,11 @@ Data Engineer and Data Analyst with **15 years of experience** across the whole 
 ![SSIS](https://img.shields.io/badge/SSIS-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
 ![Pentaho](https://img.shields.io/badge/Pentaho-005C9C?style=flat)
 
+**Analytics & Statistics**
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat&logo=scipy&logoColor=white)
+![Spark MLlib](https://img.shields.io/badge/Spark%20MLlib-E25A1C?style=flat&logo=apachespark&logoColor=white)
+
 **BI & Visualization**
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 ![Qlik](https://img.shields.io/badge/Qlik%20Sense-009848?style=flat&logo=qlik&logoColor=white)
@@ -64,6 +70,7 @@ Data Engineer and Data Analyst with **15 years of experience** across the whole 
 
 | Project | Description | Stack |
 |---|---|---|
+| [**Fintech Credit Risk Analytics**](https://github.com/vitorchavernue/fintech-credit-risk-analytics) | Credit risk analytics on 307k real loans and 17M credit history records: Databricks medallion pipeline, hypothesis tests on business rules, credit scorecard (AUC 0.755) and approval cutoff simulation — the score cuts defaults by 42% vs the current rules at the same approval rate | Databricks · PySpark · Spark SQL · Delta Lake · MLlib · SciPy |
 | [**Public Spending Data Platform**](https://github.com/vitorchavernue/public-spending-data-platform) | AWS lakehouse migration to Snowflake: ingestion, Glue, Athena, dbt star schema with data quality tests, shadow validation (99.5% gate), monthly Airflow orchestration, cost analysis, Terraform and CI | AWS S3 · Glue · Athena · Snowflake · dbt · Airflow · Terraform |
 | [**E-commerce Logistics Data Platform on Azure**](https://github.com/vitorchavernue/ecommerce-logistics-azure-platform) | Delivery and freight analytics for ~100k orders: Data Factory orchestration, ADLS Gen2 medallion lake, Synapse Spark and serverless SQL, geospatial route analysis and a data quality gate | Azure Data Factory · Synapse · ADLS Gen2 · PySpark |
 | [**Data Lakehouse on Databricks**](https://github.com/vitorchavernue/DataLake_In_DataBricks) | End-to-end lakehouse with medallion architecture, config-driven ingestion, data quality rules and star schema | Databricks · PySpark · Delta Lake · Spark SQL |
@@ -78,4 +85,5 @@ Data Engineer and Data Analyst with **15 years of experience** across the whole 
 - **Pipelines & ETL:** batch ingestion, orchestration, Glue/ADF/Databricks jobs, SQL-based transformations
 - **Data quality & governance:** validation with business areas in staging, data and process testing, monitoring of daily routines
 - **Cost & performance:** query optimization, workload migration to pay-per-use compute
+- **Advanced analytics:** hypothesis testing, experiment design, credit scoring and policy simulation in money terms
 - **BI & storytelling:** executive dashboards and self-service models in Power BI
