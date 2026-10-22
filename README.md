@@ -64,7 +64,7 @@ Data Engineer and Data Analyst with **15 years of experience** across the whole 
 
 | Project | Description | Stack |
 |---|---|---|
-| [**Public Spending Data Platform**](https://github.com/vitorchavernue/public-spending-data-platform) | AWS lakehouse migration to Snowflake: ingestion, Glue, Athena, dbt star schema with data quality tests, shadow validation (99.5% gate), cost analysis, Terraform and CI | AWS S3 · Glue · Athena · Snowflake · dbt · Terraform |
+| [**Public Spending Data Platform**](https://github.com/vitorchavernue/public-spending-data-platform) | AWS lakehouse migration to Snowflake: ingestion, Glue, Athena, dbt star schema with data quality tests, shadow validation (99.5% gate), monthly Airflow orchestration, cost analysis, Terraform and CI | AWS S3 · Glue · Athena · Snowflake · dbt · Airflow · Terraform |
 | [**E-commerce Logistics Data Platform on Azure**](https://github.com/vitorchavernue/ecommerce-logistics-azure-platform) | Delivery and freight analytics for ~100k orders: Data Factory orchestration, ADLS Gen2 medallion lake, Synapse Spark and serverless SQL, geospatial route analysis and a data quality gate | Azure Data Factory · Synapse · ADLS Gen2 · PySpark |
 | [**Data Lakehouse on Databricks**](https://github.com/vitorchavernue/DataLake_In_DataBricks) | End-to-end lakehouse with medallion architecture, config-driven ingestion, data quality rules and star schema | Databricks · PySpark · Delta Lake · Spark SQL |
 | [**Public Budget Execution Dashboard**](https://github.com/vitorchavernue/public-budget-execution-powerbi) | Analysis of Brazilian public spending with official government data: execution, regional distribution and KPIs | Power BI · DAX · Power Query |
