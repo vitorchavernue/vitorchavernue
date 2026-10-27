@@ -15,7 +15,8 @@ Data Engineer and Data Analyst with **15 years of experience** across the whole 
 
 - 🏗️ I build data platforms from scratch in companies with little or no analytics culture, implementing **medallion architecture (bronze, silver, gold)**, **dimensional models** and governed data products for BI.
 - ☁️ Hands-on with modern cloud stacks: **AWS (S3, Glue, Athena)**, **Snowflake**, **Azure (Data Factory, Synapse)** and **Databricks**, including **cross-cloud migrations** (AWS → Snowflake on Azure) and **cost optimization**.
-- 📊 Expert in **SQL**, **Python** and **Power BI**, turning data into reliable insights for executive decision-making.
+- 📊 Expert in **SQL**, **Python** and **Power BI**, turning data into reliable insights for executive decision-making — including enterprise Power BI practices: **PBIP/TMDL in Git**, **row-level security**, **incremental refresh** and **calculation groups**.
+- 🔄 **Data migrations** between systems: source-to-target mapping, data cleaning rules, full and incremental loads and **reconciliation** that proves nothing was lost.
 - 📈 **Statistics applied to business questions**: hypothesis testing, confidence intervals, experiment design (A/B, champion vs challenger) and **credit risk scoring**.
 - 🤝 Delivered data projects for companies such as **Itaú**, **JBS (Seara, Friboi, Swift)**, **Suhai Seguradora**, **Samsung**, **Panasonic** and **Nestlé**.
 - 🌏 Advanced English — 2 years living and working in Australia.
@@ -44,6 +45,9 @@ Data Engineer and Data Analyst with **15 years of experience** across the whole 
 ![Delta Lake](https://img.shields.io/badge/Delta%20Lake-003366?style=flat&logo=delta&logoColor=white)
 ![SSIS](https://img.shields.io/badge/SSIS-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
 ![Pentaho](https://img.shields.io/badge/Pentaho-005C9C?style=flat)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 
 **Analytics & Statistics**
 ![pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)
@@ -72,12 +76,13 @@ Data Engineer and Data Analyst with **15 years of experience** across the whole 
 | Project | Description | Stack |
 |---|---|---|
 | [**Fintech Credit Risk Analytics**](https://github.com/vitorchavernue/fintech-credit-risk-analytics) | Credit risk analytics on 307k real loans and 17M credit history records: Databricks medallion pipeline, hypothesis tests on business rules, credit scorecard (AUC 0.755) and approval cutoff simulation — the score cuts defaults by 42% vs the current rules at the same approval rate | Databricks · PySpark · Spark SQL · Delta Lake · MLlib · SciPy |
+| [**Legacy Banking Data Migration**](https://github.com/vitorchavernue/legacy-banking-data-migration) | Migration of a legacy core banking database (SQL Server) to PostgreSQL and MongoDB: source-to-target mapping and cleaning rules, full and incremental loads, reconciliation gate (every transaction compared field by field, money totals and app balances), rejected records with reasons, alerts and a FastAPI service — CI on real SQL Server, PostgreSQL and MongoDB containers | Python · SQL Server · PostgreSQL · MongoDB · SQLAlchemy · FastAPI · Docker |
 | [**Public Spending Data Platform**](https://github.com/vitorchavernue/public-spending-data-platform) | AWS lakehouse migration to Snowflake: ingestion, Glue, Athena, dbt star schema with data quality tests, shadow validation (99.5% gate), monthly Airflow orchestration, cost analysis, Terraform and CI | AWS S3 · Glue · Athena · Snowflake · dbt · Airflow · Terraform |
 | [**E-commerce Product Analytics on BigQuery**](https://github.com/vitorchavernue/ecommerce-product-analytics-bigquery) | Product and marketing analytics on the real GA4 export of the Google Merchandise Store: dbt models over nested events, purchase funnel, channel conversion with confidence intervals and significance tests, weekly cohort retention, RFM segmentation and a public [Looker Studio dashboard](https://lookerstudio.google.com/reporting/2005265e-abff-4477-a0c3-f4f0acebb038) | BigQuery · dbt · SQL · Python · Looker Studio · GitHub Actions |
 | [**E-commerce Logistics Data Platform on Azure**](https://github.com/vitorchavernue/ecommerce-logistics-azure-platform) | Delivery and freight analytics for ~100k orders: Data Factory orchestration, ADLS Gen2 medallion lake, Synapse Spark and serverless SQL, geospatial route analysis and a data quality gate | Azure Data Factory · Synapse · ADLS Gen2 · PySpark |
+| [**Contact Center SLA — Power BI**](https://github.com/vitorchavernue/contact-center-sla-powerbi) | Enterprise Power BI project for outsourced customer service (6 BPO partners, voice and WhatsApp, 1.5M contacts): PBIP/TMDL in Git, contract-based SLA measures, calculation group for time intelligence, dynamic row-level security, incremental refresh, report as code and a CI quality gate with the Tabular Object Model and 19 best-practice rules | Power BI · DAX · Power Query · TMDL · Python · GitHub Actions |
 | [**Data Lakehouse on Databricks**](https://github.com/vitorchavernue/DataLake_In_DataBricks) | End-to-end lakehouse with medallion architecture, config-driven ingestion, data quality rules and star schema | Databricks · PySpark · Delta Lake · Spark SQL |
 | [**Public Budget Execution Dashboard**](https://github.com/vitorchavernue/public-budget-execution-powerbi) | Analysis of Brazilian public spending with official government data: execution, regional distribution and KPIs | Power BI · DAX · Power Query |
-| [**Power BI & Data Analytics Portfolio**](https://github.com/vitorchavernue/power-bi-data-analytics-portfolio) | Dashboards for sales, sports and product analytics with star schema, time intelligence and what-if analysis | Power BI · SQL · Python |
 
 ---
 
@@ -85,7 +90,8 @@ Data Engineer and Data Analyst with **15 years of experience** across the whole 
 
 - **Data architecture:** lakehouse and data warehouse design, ODS, medallion layers, star schema
 - **Pipelines & ETL:** batch ingestion, orchestration, Glue/ADF/Databricks jobs, SQL-based transformations
+- **Data migrations:** source-to-target mapping, cleaning rules, incremental sync and reconciliation gates before cut-over
 - **Data quality & governance:** validation with business areas in staging, data and process testing, monitoring of daily routines
 - **Cost & performance:** query optimization, workload migration to pay-per-use compute
 - **Advanced analytics:** hypothesis testing, experiment design, credit scoring and policy simulation in money terms
-- **BI & storytelling:** executive dashboards and self-service models in Power BI
+- **BI & storytelling:** executive dashboards and governed self-service models in Power BI (RLS, incremental refresh, calculation groups, CI checks)
